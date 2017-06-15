@@ -32,6 +32,12 @@
 
 <body>
 
+<div class="sk-cube-grid">
+  <div class="sk-cube sk-cube1"></div>
+  <div class="sk-cube sk-cube2"></div>
+  <div class="sk-cube sk-cube3"></div>
+  <div class="sk-cube sk-cube4"></div>
+
    <!-- Header
    ================================================== -->
    <header id="home">
@@ -683,6 +689,19 @@ I have also won a lot of competitions in my school life, being an active partici
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
+   <script>
+$(document).ready(function() {
+//Preloader
+$(window).load(function() {
+preloaderFadeOutTime = 500;
+function hidePreloader() {
+var preloader = $('.spinner-wrapper');
+preloader.fadeOut(preloaderFadeOutTime);
+}
+hidePreloader();
+});
+});
+</script>
 
 </body>
 
